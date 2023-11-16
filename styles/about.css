@@ -1,0 +1,94 @@
+/*! Courses */
+section.curriculum {
+  padding: calc(3rem + 93px) 0 3rem 0;
+}
+
+section.curriculum .container {
+  flex-direction: column;
+  gap: 4rem;
+}
+
+section.curriculum .container .main-heading {
+  width: 100%;
+  text-align: center;
+}
+
+section.curriculum .container .main-heading h1 {
+  margin-bottom: 1rem;
+}
+
+section.curriculum .container .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+section.curriculum .container .cards .card {
+  width: 100%;
+  background-color: #666;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.6s ease-out;
+  box-shadow: 0 0px 20px 0 transparent;
+}
+
+section.curriculum .container .cards .card:hover {
+  transform: translateY(-0.6rem);
+  box-shadow: 0 0px 15px 0 white;
+}
+
+section.curriculum .container .cards .card h3 {
+  margin-bottom: 0.75rem;
+}
+
+section.curriculum .container .cards .card p {
+  line-height: 1.4;
+  color: #ccc;
+}
+
+/*! Facilities */
+section.facilities {
+  padding-top: 2rem;
+  overflow: hidden;
+}
+
+section.facilities .container .cards .card {
+  all: unset;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+section.facilities .container .cards .card:hover {
+  all: unset;
+}
+
+section.facilities .container .cards .card img {
+  background-color: transparent;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  transition: 0.35s ease-out;
+}
+
+section.facilities .container .cards .card .info {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.75);
+  text-align: center;
+  border-radius: 0 0 0.5rem 0.5rem;
+  padding: 1rem 0;
+  bottom: -200px;
+  transition: 0.35s ease-out;
+}
+
+section.facilities .container .cards .card:hover .info {
+  bottom: -6.5px;
+}
+
+section.facilities .container .cards .card:hover img {
+  transform: scale(1.1) rotate(5deg);
+}

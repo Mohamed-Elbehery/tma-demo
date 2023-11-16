@@ -1,0 +1,15 @@
+h1 {
+  padding: calc(7rem + 93px) 0 0 1rem;
+  text-align: center;
+}
+
+h1 a {
+  color: #999;
+  text-decoration: underline;
+}
+
+footer.sticky-bottom {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}

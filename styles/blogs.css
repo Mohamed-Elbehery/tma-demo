@@ -1,0 +1,88 @@
+.clear {
+  padding-top: calc(3rem + 93px);
+}
+
+section {
+  margin: 0 auto 20px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  width: fit-content;
+  overflow: hidden;
+}
+
+h2 {
+  color: #333;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: #555;
+}
+
+table {
+  color: #555;
+  border: 1px solid #555;
+  margin: 0 auto;
+}
+
+table.fees {
+  margin-bottom: 1rem;
+}
+
+table.scholarship {
+  margin-top: 1rem;
+}
+
+section h3 {
+  margin-top: 1rem;
+}
+
+table thead th {
+  background-color: #555;
+  color: white;
+  padding: 0.5rem 2rem;
+}
+
+table tbody td {
+  border: 1px solid #555;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+section.funding {
+  padding-bottom: 2rem;
+}
+
+section.funding p {
+  margin-bottom: 1.5rem;
+  width: 1000px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+section.funding p:last-of-type {
+  margin-bottom: 2.25rem;
+}
+
+section.funding a {
+  color: black;
+  border: 2px solid black;
+  padding: 0.75rem 1rem;
+  border-radius: 0.3rem;
+  transition: 0.35s ease-out;
+}
+
+section.funding a:hover {
+  background-color: black;
+  color: white;
+}

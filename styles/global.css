@@ -1,0 +1,225 @@
+/*! Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background-color: #333;
+  color: white;
+}
+
+.container {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/*! Header */
+header {
+  position: fixed;
+  width: 100%;
+  height: 93px;
+  backdrop-filter: blur(0.5rem);
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+}
+
+header .container a.logo img {
+  width: 200px;
+}
+
+header .container nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: 1rem;
+}
+
+header .container nav ul li a {
+  color: white;
+  position: relative;
+}
+
+header .container nav ul li a::after {
+  content: "";
+  position: absolute;
+  inset: auto auto -5px 50%;
+  translate: -50%;
+  width: 0%;
+  height: 3px;
+  background-color: white;
+  transition: 0.35s ease-out;
+  border-radius: 4px;
+}
+
+header .container nav ul li a:hover::after {
+  width: 100%;
+}
+
+/*! Vision and Mission Sections */
+section.vision,
+section.mission {
+  padding: calc(3rem + 93px) 0 0 0;
+}
+
+section.mission {
+  padding-top: 4rem;
+}
+
+section.vision .container .content,
+section.mission .container .content {
+  display: flex;
+  gap: 1.25rem;
+}
+
+/*? @Override */
+section.mission .container .content {
+  flex-direction: row-reverse;
+}
+
+section.vision .container .content .info h2,
+section.mission .container .content .info h2 {
+  color: white;
+  margin-top: 0.75rem;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+section.vision .container .content .info p,
+section.mission .container .content .info p {
+  color: #ccc;
+  line-height: 1.6;
+}
+
+section.vision .container .content .info ul,
+section.mission .container .content .info ul {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+section.vision .container .content .info ul li,
+section.mission .container .content .info ul li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+}
+
+section.vision .container .content .info ul li i,
+section.mission .container .content .info ul li i {
+  color: wheat;
+  background-color: #777;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+section.vision .container .content img,
+section.mission .container .content img {
+  max-width: 700px;
+}
+
+/*! Campus Section */
+section.campus {
+  padding: 3rem 0;
+}
+
+section.campus .container {
+  all: unset;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  width: 80%;
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+section.campus .container .card {
+  position: relative;
+  cursor: pointer;
+}
+
+section.campus .container .card img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 0.65rem;
+}
+
+section.campus .container .card .info {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  opacity: 0;
+  transition: 0.5s ease-out;
+}
+
+section.campus .container .card:hover .info {
+  opacity: 1;
+}
+
+/*! Footer */
+footer {
+  text-align: center;
+  padding-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+footer h3 {
+  margin-bottom: 1rem;
+}
+
+footer p {
+  width: 900px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-size: 14px;
+  color: #ccc;
+}
+
+footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+footer ul li {
+  cursor: pointer;
+}
+
+footer ul li i {
+  font-size: 22px;
+  transition: 0.35s ease-out;
+}
+
+footer ul li:hover i {
+  color: wheat;
+}
+
+footer h4 {
+  color: #e4e4e4;
+}
+
+footer h4 i {
+  color: wheat;
+}
