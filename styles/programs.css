@@ -1,5 +1,7 @@
-.clear {
+main.fees {
   padding-top: calc(3rem + 93px);
+  display: flex;
+  flex-wrap: wrap;
 }
 
 section {
@@ -11,6 +13,11 @@ section {
   text-align: center;
   width: fit-content;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 47.5%;
 }
 
 h2 {
@@ -65,9 +72,8 @@ section.funding {
 
 section.funding p {
   margin-bottom: 1.5rem;
-  width: 1000px;
+  max-width: 1000px;
   line-height: 1.6;
-  text-align: left;
 }
 
 section.funding p:last-of-type {
