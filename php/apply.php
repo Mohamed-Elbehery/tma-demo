@@ -19,7 +19,8 @@ if ($conn->connect_error) {
   // to prevent SQL Injection
   $response->bind_param("sssssss", $name, $gender, $date, $grade, $contactNumber, $email, $comment);
   $response->execute();
-  echo "You Applied Successfully...";
+  echo "Thank You $name For Applying 🎉, <a href='/tma'>Go back to home</a>";
+
   $response->close();
   $conn->close();
 }
